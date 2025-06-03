@@ -1,0 +1,221 @@
+/bin/bash: /data/apps/miniconda3/24.9.2/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/deepspeed/runtime/zero/linear.py:45: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/deepspeed/runtime/zero/linear.py:71: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/pydantic/_internal/_config.py:341: UserWarning: Valid config keys have changed in V2:
+* 'allow_population_by_field_name' has been renamed to 'populate_by_name'
+* 'validate_all' has been renamed to 'validate_default'
+  warnings.warn(message, UserWarning)
+/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/pydantic/_internal/_fields.py:132: UserWarning: Field "model_persistence_threshold" in DeepSpeedZeroConfig has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/pydantic/_internal/_config.py:341: UserWarning: Valid config keys have changed in V2:
+* 'validate_all' has been renamed to 'validate_default'
+  warnings.warn(message, UserWarning)
+Loading model weights from /data/home/scyb035/zhangyufei/datasets/train_result/diff_t36_250117/99.pth...
+main.py:99: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  loaded_model = torch.load(args.resume)
+Epoch [1/100], Loss: 0.0002
+
+Epoch [2/100], Loss: 0.0001
+
+Epoch [3/100], Loss: 0.0001
+
+Epoch [4/100], Loss: 0.0001
+
+Epoch [5/100], Loss: 0.0001
+
+Epoch [6/100], Loss: 0.0001
+
+Epoch [7/100], Loss: 0.0001
+
+Epoch [8/100], Loss: 0.0001
+
+Epoch [9/100], Loss: 0.0001
+
+Epoch [10/100], Loss: 0.0001
+
+Epoch [11/100], Loss: 0.0001
+
+Epoch [12/100], Loss: 0.0001
+
+Epoch [13/100], Loss: 0.0000
+
+Epoch [14/100], Loss: 0.0000
+
+Epoch [15/100], Loss: 0.0001
+
+Epoch [16/100], Loss: 0.0000
+
+Epoch [17/100], Loss: 0.0000
+
+Epoch [18/100], Loss: 0.0001
+
+Epoch [19/100], Loss: 0.0000
+
+Epoch [20/100], Loss: 0.0000
+
+Epoch [21/100], Loss: 0.0000
+
+Epoch [22/100], Loss: 0.0000
+
+Epoch [23/100], Loss: 0.0000
+
+Epoch [24/100], Loss: 0.0000
+
+Epoch [25/100], Loss: 0.0000
+
+Epoch [26/100], Loss: 0.0000
+
+Epoch [27/100], Loss: 0.0000
+
+Epoch [28/100], Loss: 0.0000
+
+Epoch [29/100], Loss: 0.0000
+
+Epoch [30/100], Loss: 0.0000
+
+Epoch [31/100], Loss: 0.0000
+
+Epoch [32/100], Loss: 0.0000
+
+Epoch [33/100], Loss: 0.0000
+
+Epoch [34/100], Loss: 0.0000
+
+Epoch [35/100], Loss: 0.0000
+
+Epoch [36/100], Loss: 0.0000
+
+Epoch [37/100], Loss: 0.0000
+
+Epoch [38/100], Loss: 0.0000
+
+Epoch [39/100], Loss: 0.0000
+
+Epoch [40/100], Loss: 0.0000
+
+Epoch [41/100], Loss: 0.0000
+
+Epoch [42/100], Loss: 0.0000
+
+Epoch [43/100], Loss: 0.0000
+
+Epoch [44/100], Loss: 0.0000
+
+Epoch [45/100], Loss: 0.0000
+
+Epoch [46/100], Loss: 0.0000
+
+Epoch [47/100], Loss: 0.0000
+
+Epoch [48/100], Loss: 0.0000
+
+Epoch [49/100], Loss: 0.0000
+
+Epoch [50/100], Loss: 0.0000
+
+Epoch [51/100], Loss: 0.0000
+
+Epoch [52/100], Loss: 0.0000
+
+Epoch [53/100], Loss: 0.0000
+
+Epoch [54/100], Loss: 0.0000
+
+Epoch [55/100], Loss: 0.0000
+
+Epoch [56/100], Loss: 0.0000
+
+Epoch [57/100], Loss: 0.0000
+
+Epoch [58/100], Loss: 0.0000
+
+Epoch [59/100], Loss: 0.0000
+
+Epoch [60/100], Loss: 0.0000
+
+Epoch [61/100], Loss: 0.0000
+
+Epoch [62/100], Loss: 0.0000
+
+Epoch [63/100], Loss: 0.0000
+
+Epoch [64/100], Loss: 0.0000
+
+Epoch [65/100], Loss: 0.0000
+
+Epoch [66/100], Loss: 0.0000
+
+Epoch [67/100], Loss: 0.0000
+
+Epoch [68/100], Loss: 0.0000
+
+Epoch [69/100], Loss: 0.0000
+
+Epoch [70/100], Loss: 0.0000
+
+Epoch [71/100], Loss: 0.0000
+
+Epoch [72/100], Loss: 0.0000
+
+Epoch [73/100], Loss: 0.0000
+
+Epoch [74/100], Loss: 0.0000
+
+Epoch [75/100], Loss: 0.0000
+
+Epoch [76/100], Loss: 0.0000
+
+Epoch [77/100], Loss: 0.0000
+
+Epoch [78/100], Loss: 0.0000
+
+Epoch [79/100], Loss: 0.0000
+
+Epoch [80/100], Loss: 0.0000
+
+Epoch [81/100], Loss: 0.0000
+
+Epoch [82/100], Loss: 0.0000
+
+Epoch [83/100], Loss: 0.0000
+
+Epoch [84/100], Loss: 0.0000
+
+Epoch [85/100], Loss: 0.0000
+
+Epoch [86/100], Loss: 0.0000
+
+Epoch [87/100], Loss: 0.0000
+
+Epoch [88/100], Loss: 0.0000
+
+Epoch [89/100], Loss: 0.0000
+
+Epoch [90/100], Loss: 0.0000
+
+Epoch [91/100], Loss: 0.0000
+
+Epoch [92/100], Loss: 0.0000
+
+Epoch [93/100], Loss: 0.0000
+
+Epoch [94/100], Loss: 0.0000
+
+Epoch [95/100], Loss: 0.0000
+
+Epoch [96/100], Loss: 0.0000
+
+Epoch [97/100], Loss: 0.0000
+
+Epoch [98/100], Loss: 0.0000
+
+Epoch [99/100], Loss: 0.0000
+
+Epoch [100/100], Loss: 0.0000
+
+Training complete. Best model saved at None with loss inf
+slurmstepd: error: *** JOB 6509 ON g0026 CANCELLED AT 2025-01-18T20:06:53 ***

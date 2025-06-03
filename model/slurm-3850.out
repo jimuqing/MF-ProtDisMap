@@ -1,0 +1,22 @@
+/bin/bash: /data/apps/miniconda3/24.9.2/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/var/spool/slurmd/job03850/slurm_script: line 8: activate: No such file or directory
+LLLLLLLL: 100
+xxxxxxxxx: torch.Size([64, 100, 100])
+Traceback (most recent call last):
+  File "diffusion.py", line 388, in <module>
+    x = diffC(x, L)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "diffusion.py", line 321, in forward
+    noise = self.reverse_model(x, time_emb)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/home/scyb035/zhangyufei/FreeProtMap-diffusion/model/R_former/unet.py", line 90, in forward
+    time_embed = self.time_linear(time_emb)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1729, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'UNet' object has no attribute 'time_linear'

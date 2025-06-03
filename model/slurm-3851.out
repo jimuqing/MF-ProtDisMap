@@ -1,0 +1,20 @@
+/bin/bash: /data/apps/miniconda3/24.9.2/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/var/spool/slurmd/job03851/slurm_script: line 8: activate: No such file or directory
+LLLLLLLL: 100
+xxxxxxxxx: torch.Size([64, 100, 100])
+Traceback (most recent call last):
+  File "diffusion.py", line 388, in <module>
+    x = diffC(x, L)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "diffusion.py", line 321, in forward
+    noise = self.reverse_model(x, time_emb)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/home/scyb035/.conda/envs/zyf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/home/scyb035/zhangyufei/FreeProtMap-diffusion/model/R_former/unet.py", line 122, in forward
+    d2 = torch.cat((e1, d2), dim=1)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 114.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 7.88 MiB is free. Including non-PyTorch memory, this process has 79.08 GiB memory in use. Of the allocated memory 76.31 GiB is allocated by PyTorch, and 2.10 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
